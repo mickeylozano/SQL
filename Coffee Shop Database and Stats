@@ -1,0 +1,21 @@
+CREATE TABLE coffee_shop (id INTEGER, name TEXT, coffee_roast TEXT, size TEXT, price INTEGER);
+
+INSERT INTO coffee_shop VALUES (001, 'Caramel Macchiato', 'Blonde Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (002, 'Caramel Macchiato', 'Medium Roast', 'Grande', 7.50);
+INSERT INTO coffee_shop VALUES (003, 'Espresso Macchiato', 'Dark Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (004, 'Cafe Misto', 'Blonde Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (005, 'Cafe Misto', 'Medium Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (006, 'Cafe Misto', 'Dark Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (007, 'Drip Coffee', 'Blonde Roast', 'Grande', 3.50);
+INSERT INTO coffee_shop VALUES (008, 'Drip Coffee', 'Medium Roast', 'Grande', 3.50);
+INSERT INTO coffee_shop VALUES (009, 'Drip Coffee', 'Dark Roast', 'Grande', 3.50);
+INSERT INTO coffee_shop VALUES (010, 'Vanilla Latte', 'Blonde Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (011, 'Vanilla Latte', 'Medium Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (012, 'Vanilla Latte', 'Dark Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (013, 'Cappuccino', 'Blonde Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (014, 'Cappuccino', 'Medium Roast', 'Grande', 5.50);
+INSERT INTO coffee_shop VALUES (015, 'Cappuccino', 'Dark Roast', 'Grande', 5.50);
+
+SELECT * FROM coffee_shop ORDER BY price;
+
+SELECT SUM(price) FROM coffee_shop;
