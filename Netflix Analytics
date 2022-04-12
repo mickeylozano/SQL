@@ -1,3 +1,16 @@
+#Joining two tables in a database of Netflix data
+
+SELECT 
+people.show_id,
+people.director,
+titles.title,
+titles.type,
+titles.date_added,
+titles.release_year
+FROM "CharlotteChaze/BreakIntoTech"."netflix_people" people
+LEFT JOIN "CharlotteChaze/BreakIntoTech"."netflix_titles_info" titles
+ON people.show_id = titles.show_id;
+
 #Querying a database of Nexflix data to answer questions about the data 
 
 #How many movie titles are there in the database? (movies only, not tv shows) 
